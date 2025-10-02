@@ -5,16 +5,18 @@ WORDS = ["jumps", "laziest", "brown", "a", "quick", "fox", "the", "dog", "over"]
 
 # find the word that is alphabetically "highest" (comes last alphabetically)
 def get_last_word_alphabetically(words):
-    pass
+    return max(words) 
 
 # find the longest word
 def get_longest_word(words):
-    pass
+    # def get_len(word):
+    #     return len(word) 
+    return max(words,key=len)
 
 # find the shortest word (still using max)
 # this is a little sneaky!
 def get_shortest_word(words):
-    pass
+    return max(words, key=lambda word: -len(word))
 
 # BONUS: now using sorted, put the jumbled sentence into this order:
 # a quick brown fox jumps over the laziest dog
